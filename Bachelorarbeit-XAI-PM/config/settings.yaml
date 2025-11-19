@@ -1,0 +1,28 @@
+# =====================================================
+# Projektkonfiguration: XAI für Predictive Maintenance
+# =====================================================
+
+# Projektpfade
+paths:
+  data:
+    raw: "data/raw"                 # Pfad zu den Rohdaten
+  models: "artifacts/models"        # Speicherort für trainierte Modelle
+  results: "artifacts/results"      # Speicherort für Ergebnisdateien (z. B. JSON)
+  shap_plots: "artifacts/shap_plots" # Speicherort für SHAP-Diagramme
+  logs: "logs"                      # Verzeichnis für Log-Dateien
+
+# Datenkonfiguration
+data:
+  filename: "automotive_data_train_140.csv"  # Name der zu ladenden Datendatei
+
+# Modellkonfiguration
+model:
+  type: "random_forest"             # Modelltyp (z. B. random_forest oder decision_tree)
+  random_state: 42                  # Zufallswert für Reproduzierbarkeit
+
+# SHAP-Konfiguration
+shap:
+  sample_size: 100                  # Anzahl der Stichproben für die Analyse
+  background_samples: 50            # Anzahl der Hintergrunddatenpunkte für SHAP-Erklärungen
+  dpi: 300                          # Auflösung der generierten Diagramme (dots per inch)
+  plot_format: "png"                # Ausgabeformat der Diagramme (z. B. png oder pdf)
