@@ -138,7 +138,7 @@ Beispielhafte SHAP-Grafiken:
 
 * **`shap_summary.png`**:
 * **`shap_bar.png`**:
-* * **`shap_waterfall.png`**:
+* **`shap_waterfall.png`**:
 
 ---
 
@@ -161,4 +161,5 @@ Es dient der interaktiven Untersuchung und Validierung der im Python-Pipeline er
 ---
 
 © 2025 Mohamed Darguech – Hochschule Kaiserslautern
+
 
